@@ -155,11 +155,25 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
+    color: white;
     background: url(../img/bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.header .social {
+  margin-top: 100px;
+}
+
+.header h3 a {
+  color: white;
+  text-decoration: underline;
+}
+
+.header h3 a:hover {
+  text-decoration: none;
 }
 
 /* About */
@@ -214,6 +228,7 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+    background-color: #333;
 }
 
 .call-to-action .btn {
@@ -237,8 +252,18 @@ hr.small {
     pointer-events: none;
 }
 
+/* social */
+
+.social .fa-twitter {
+  color: #0084b4;
+}
+
+.social .fa-flickr {
+  color: #ff0084;
+}
+
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 20px 0;
 }

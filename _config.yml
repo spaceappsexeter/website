@@ -1,28 +1,24 @@
 # Site settings
-title:
-email:
+title: Space Apps Exeter
+email: space-apps@informaticslab.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Once again the Met Office is proud to be hosting NASA's Space Apps Challenge.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://spaceappsexeter.org/" # the base hostname & protocol for your site
 
 # User setting
-owner:
-email:
-facebook_username:
-twitter_username:
-github_username:
+social:
+  twitter: spaceappsexeter
+  flickr: spaceappsexeter
+  
 address:
-  - line:
-  - line:
-  # Feel free to add more lines here 
-telephone:
-copyright:
+  - line: "Met Office"
+  - line: "Fitzroy Road, Exeter, Devon, EX1 3PB"
+copyright: Crown
 
 # API settings
-google_api_key:
+google_api_key: AIzaSyC27hz24IBSijJOzkQfou9PD8hfw3E9b0M
+google_analytics: UA-72192919-1
 
 # Build settings
 markdown: kramdown

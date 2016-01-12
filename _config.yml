@@ -10,7 +10,7 @@ url: "http://spaceappsexeter.org/" # the base hostname & protocol for your site
 social:
   twitter: spaceappsexeter
   flickr: spaceappsexeter
-  
+
 address:
   - line: "Met Office"
   - line: "Fitzroy Road, Exeter, Devon, EX1 3PB"
@@ -22,3 +22,22 @@ google_analytics: UA-72192919-1
 
 # Build settings
 markdown: kramdown
+
+#build output dir
+destination: _site
+
+#exclude from build
+exclude: ["bower.json",
+          "Gemfile*",
+          "package.json",
+          "README.md",
+          "LICENSE.md",
+          "Gruntfile.js",
+          "node_modules",
+          "bower_components",
+          "tests"]
+
+#sass config
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -11,39 +11,47 @@
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
 
-.header .social {
-  margin-top: 100px;
-}
+    .logo {
+      margin-top: 30px;
+      margin-bottom: 0px;
+      height: 230px;
 
-.header {
-  p {
-    margin-top: 10px;
-    font-size: 2.4rem;
-
-    a {
-      color: white;
-      text-decoration: underline;
+      .sub-text {
+        fill: $logo-red;
+      }
     }
 
-    a:hover {
-      text-decoration: none;
+    p {
+      margin-top: 10px;
+      font-size: 2rem;
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
     }
 
-  }
+    p.date {
+      font-size: 3rem;
+    }
 
-  p.date {
-    font-size: 3rem;
-  }
+    p:first-of-type {
+      margin-top: 50px;
+    }
 
-  p:first-of-type {
-    margin-top: 50px;
-  }
+    p:last-of-type {
+      margin-top: 50px;
+    }
 
-  p:last-of-type {
-    margin-top: 50px;
-  }
+    .social {
+      margin-top: 50px;
+    }
 }
 
 /* About */
@@ -76,9 +84,9 @@
     -o-background-size: cover;
 }
 
-/* Portfolio */
+/* Past  */
 
-.portfolio {
+.past-projects {
     padding: 50px 0;
 }
 
@@ -94,15 +102,32 @@
     opacity: 0.8;
 }
 
-/* Call to Action */
-
-.call-to-action {
+.past-events {
     padding: 50px 0;
-    background-color: #333;
+    background-color: $blue;
+    color: white;
+    h4 {
+      small {
+        color: inherit;
+      }
+    }
 }
 
-.call-to-action .btn {
-    margin: 10px;
+/* Contact */
+
+.contact {
+    padding: 50px 0;
+    padding-bottom: 80px;
+    background-color: $blue;
+
+    h3 {
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 }
 
 /* Map */
@@ -125,14 +150,40 @@
 /* Social */
 
 .social {
+  margin-bottom: 30px;
 
-  .fa-twitter {
-    color: #0084b4;
+  i {
+    background-color: white;
+    line-height: 1.5em;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50% 50%;
   }
 
-  .fa-flickr {
-    color: #ff0084;
+  a {
+    color: #555;
   }
+
+  a:hover {
+    color: #999;
+  }
+
+  // .fa-twitter {
+  //   color: lighten(#0084b4, 40%);
+  // }
+  //
+  // .fa-twitter:hover {
+  //   color: #0084b4;
+  // }
+  //
+  // .fa-flickr {
+  //   color: lighten(#ff0084, 40%);
+  // }
+  //
+  // .fa-flickr:hover {
+  //   color: #ff0084;
+  // }
 }
 
 /* Footer */

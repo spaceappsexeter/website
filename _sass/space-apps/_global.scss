@@ -7,7 +7,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Titillium Web",sans-serif;
 }
 
 .text-vertical-center {
@@ -49,6 +49,23 @@ body {
 .btn-light:active {
     color: #333;
     background-color: rgba(255,255,255,0.8);
+}
+
+.btn-chunky {
+  box-shadow: rgb(191, 85, 64) 0px 8px 0px 0px;
+  background-color: rgb(239, 106, 80);
+  padding: 15px 80px;
+  color: white;
+  transition: .15s;
+}
+
+.btn-chunky:hover,
+.btn-chunky:focus,
+.btn-chunky:active {
+  margin-top: 4px;
+  margin-bottom: -4px;
+  box-shadow: rgb(191, 85, 64) 0px 4px 0px 0px;
+  color: white;
 }
 
 /* Custom Horizontal Rule */

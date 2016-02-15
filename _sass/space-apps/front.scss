@@ -18,7 +18,7 @@
       height: 230px;
 
       .exeter, .nasa {
-        fill: $logo-red;
+        fill: $green;
       }
     }
 
@@ -104,8 +104,8 @@
 
 .past-events {
     padding: 50px 0;
-    background-color: $blue;
-    color: white;
+    background-color: $cream;
+    color: $grey;
     h4 {
       small {
         color: inherit;
@@ -116,9 +116,10 @@
 /* Contact */
 
 .contact {
+  color: $grey;
     padding: 50px 0;
     padding-bottom: 80px;
-    background-color: $blue;
+    background-color: $cream;
 
     h3 {
       margin-bottom: 30px;

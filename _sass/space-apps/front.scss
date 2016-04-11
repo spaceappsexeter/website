@@ -113,6 +113,18 @@
     }
 }
 
+.sponsors {
+  background-color: $cream;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  img {
+    height: 100px;
+    max-width: 100%;
+    margin: 20px;
+  }
+}
+
 /* Contact */
 
 .contact {

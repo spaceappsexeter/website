@@ -9,3 +9,4 @@ Gemfile.lock
 node_modules
 bower_components
 lib
+.ruby-version

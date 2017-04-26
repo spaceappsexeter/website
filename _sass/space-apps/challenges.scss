@@ -1,0 +1,92 @@
+$pink: pink;
+
+div.challenges {
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+
+  .logo {
+    width: 100%;
+    text-align: center;
+
+    img {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  ul.contents {
+    columns: 1;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 0;
+
+    li.active::before {
+      color: $pink;
+      content: "\f004";
+	    font-family: FontAwesome;
+      font-size: 0.8em;
+      padding-right: 5px;
+    }
+  }
+
+  @media only screen and (min-width : 480px) {
+    ul.contents {
+      columns: 2;
+    }
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    ul.contents {
+      columns: 3;
+    }
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    ul.contents {
+      columns: 4;
+    }
+  }
+
+  .challenge {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    h2 {
+      .fa-heart {
+        color: #888;
+        font-size: 0.8em;
+        margin-right: 10px;
+      }
+      .fa-heart:hover {
+        color: $pink;
+        cursor: pointer;
+      }
+      .fa-heart.active {
+        color: $pink;
+      }
+      .fa-link {
+        font-size: 0.5em;
+      }
+      .counter {
+        width: 1em;
+        color: #888;
+        font-size: 0.5em;
+        margin-left: -1em;
+      }
+    }
+  }
+
+  .back-to-top {
+    text-decoration: underline;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+  }
+}

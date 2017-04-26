@@ -6,6 +6,11 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://spaceappsexeter.org/" # the base hostname & protocol for your site
 
+collections:
+  challenges:
+    title: Challenges
+    output: false
+
 # User setting
 social:
   twitter: spaceappsexeter

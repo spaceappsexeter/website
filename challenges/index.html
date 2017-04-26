@@ -1,0 +1,59 @@
+---
+layout: front
+---
+
+{% assign categories = site.challenges | map: 'category' %}
+
+<div class="challenges">
+  <a name="top"></a>
+  <div class="logo">
+    <img src="/img/logos/SpaceApps_logo-circle-01.png" alt="NASA Space Apps Challenge" />
+  </div>
+  <h1>Challenges</h1>
+
+  <ul class="contents">
+  {% for challenge in site.challenges %}
+    <li id="contents-{{ challenge.slug }}"><a href="#{{ challenge.slug }}">{{ challenge.title }}</a></li>
+  {% endfor %}
+  </ul>
+
+  <hr />
+
+  {% for challenge in site.challenges %}
+    <div class="challenge">
+      <a name="{{ challenge.slug }}"></a>
+      <h2>
+        <i class="fa fa-heart voting-button" id="{{ challenge.slug }}"></i>
+        <span class="counter" id="counter-{{ challenge.slug }}">0</span>
+        {{ challenge.title }}
+        <a href="{{ challenge.href }}"><i class="fa fa-link"></i></a>
+      </h2>
+      <p>{{ challenge.category }}</p>
+      <blockquote>
+        {{ challenge.description }}
+      </blockquote>
+
+      {{ challenge.content }}
+
+      <ul>
+      {% for resourcegroup in challenge.resources %}
+        <li>{{ resourcegroup.name }}</li>
+        <ul>
+        {% for link in resourcegroup.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+        </ul>
+      {% endfor %}
+      </ul>
+    </div>
+    <hr />
+  {% endfor %}
+
+  <div class="back-to-top"><a href="#top">^ top</a></div>
+</div>
+
+
+{% include code-of-conduct.html %}
+{% include footer.html %}
+{% include scripts.html %}
+<script src="/js/voting.js"></script>

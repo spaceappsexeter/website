@@ -53,6 +53,7 @@ var classname = document.getElementsByClassName("voting-button");
 
 var vote = function() {
     var slug = this.getAttribute("id");
+    ga('send', 'event', 'Vote', 'vote', slug);
     toggleActive(this);
     toggleActive(document.getElementById("contents-"+slug));
     votingSocket.send(JSON.stringify({

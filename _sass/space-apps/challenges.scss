@@ -59,6 +59,20 @@ div.challenges {
     margin-bottom: 50px;
 
     h2 {
+
+      padding: 30px;
+      border-left: 4px solid #4282cf;
+      background-color: #efefef;
+      margin-bottom: 20px;
+
+      p:first-child {
+        text-align: right;
+        margin: -20px 0px 5px;
+        background: #4282cf;
+        padding: 5px;
+        color: #fff;
+      }
+
       .fa-heart {
         color: #888;
         font-size: 0.8em;

@@ -65,14 +65,6 @@ div.challenges {
       background-color: #efefef;
       margin-bottom: 20px;
 
-      p:first-of-type {
-        text-align: right;
-        margin: -20px 0px 5px;
-        background: #4282cf;
-        padding: 5px;
-        color: #fff;
-      }
-
       .fa-heart {
         color: #888;
         font-size: 0.8em;
@@ -95,6 +87,16 @@ div.challenges {
         margin-left: -1em;
       }
     }
+
+    p.category {
+      text-align: right;
+      margin: -20px 0px 5px;
+      background: #4282cf;
+      padding: 5px;
+      color: #fff;
+    }
+
+
   }
 
   .back-to-top {

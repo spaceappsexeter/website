@@ -9,7 +9,7 @@ url: "http://spaceappsexeter.org/" # the base hostname & protocol for your site
 collections:
   challenges:
     title: Challenges
-    output: false
+    output: true
 
 # User setting
 social:
